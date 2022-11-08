@@ -1,0 +1,12 @@
+.form{
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.form form{
+    max-width: 80%;
+    background-color: #F9F3EF;
+    padding: 16px  64px;
+    border-radius: 15px;
+}
