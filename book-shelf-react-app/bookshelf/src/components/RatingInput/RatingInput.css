@@ -1,0 +1,16 @@
+.rating{
+    margin: 24px 10px;
+    width: 480px;
+}
+.rating label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 600; 
+}
+
+.rating input{
+    font-size: 16px;
+    background: #FFFFFF;
+    margin: auto 10px;
+}

@@ -1,3 +1,7 @@
+.dropdown{
+    margin: 24px 10px;
+}
+
 .dropdown label{
     display: block;
     margin-bottom: 8px;
@@ -8,10 +12,9 @@
 .dropdown select {
     font-size: 16px;
     background: #FFFFFF;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    width: 100%;
-    border: none;
+    width: 480px;
+    border: 2px solid #27144b81;
     padding: 20px 12px;
     box-sizing: border-box;
 }

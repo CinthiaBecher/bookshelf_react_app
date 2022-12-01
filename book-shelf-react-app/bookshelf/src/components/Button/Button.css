@@ -1,5 +1,5 @@
 .button{
-    background-color: #DCB77C;
+    background-color: #6E40D6;
     color: #fff;
     border-radius: 10px;
     font-weight: 600;
@@ -8,9 +8,9 @@
     border: none;
     cursor: pointer;
     margin-top:40px;
+    width: 240px;
 }
 
 .button:hover {
-    background-color: #caa260;
-
+    background-color: #592bc4;
 }
