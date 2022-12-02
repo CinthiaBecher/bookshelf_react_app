@@ -3,13 +3,13 @@ import './RatingInput.css'
 const RatingInput = () =>{
     return (
         <div className='rating'>
-            <label>Rating</label>
-            <input type="radio" name="webmaster" value="0"/> 0
-            <input type="radio" name="webmaster" value="1"/> 1
-            <input type="radio" name="webmaster" value="2"/> 2
-            <input type="radio" name="webmaster" value="3"/> 3
-            <input type="radio" name="webmaster" value="4"/> 4
-            <input type="radio" name="webmaster" value="5"/> 5
+            <label className='name'>Rating</label>
+            <input type="radio" name="webmaster" value="0"/> <label>0</label>
+            <input type="radio" name="webmaster" value="1"/> <label>1</label>
+            <input type="radio" name="webmaster" value="2"/> <label>2</label>
+            <input type="radio" name="webmaster" value="3"/> <label>3</label>
+            <input type="radio" name="webmaster" value="4"/> <label>4</label>
+            <input type="radio" name="webmaster" value="5"/> <label>5</label>
         </div>
     )
 }

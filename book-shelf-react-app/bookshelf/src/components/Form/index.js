@@ -7,17 +7,6 @@ import { useState } from 'react';
 
 const Form = (props) => {
 
-    const genres = [
-        'Romance',
-        'Action/Adventure', 
-        'History',
-        'Fantasy',
-        'Horror/Mystery',
-        'Biography',
-        'Self-help',
-        'Economics/Finance' 
-    ]
-
     const [title, setTitle] = useState('')
     const [author, setAuthor] = useState('')
     const [cover, setCover] = useState('')
@@ -38,11 +27,11 @@ const Form = (props) => {
                 </div>
                 <div className='SideBySide'>
                     <InputText required = {true} label="Cover" placeholder="Cover image URL" newValue = {cover} onChanges = {newValue => setCover(newValue)}/>
-                    <Dropdown label = "Genre" items = {genres} newValue = {genre} onChanges = {newValue => setGenre(newValue)}></Dropdown>
+                    <Dropdown label = "Genre" items = {props.genres} newValue = {genre} onChanges = {newValue => setGenre(newValue)}></Dropdown>
                 </div>
                 <div className='SideBySide'>
                     <RatingInput></RatingInput>
-                    <Button>Add new book</Button>
+                    <div className='align-button'><Button>Add new book</Button></div>
                 </div>
             </form>
         </section>

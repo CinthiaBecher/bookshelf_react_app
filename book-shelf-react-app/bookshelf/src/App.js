@@ -25,8 +25,9 @@ function App() {
             name: 'Economics/Finance',
             firstColor: '#A6D157',
             secondColor: '#E7F0D1'
-        },
+        }
     ]
+
     const [books, setBooks] = useState([])
 
     const onNewBookAdded = (book) => {
@@ -37,9 +38,10 @@ function App() {
     return (
         <div className = "App">
             <Banner/> 
-            <Form onNewBook = {book => onNewBookAdded(book)}/>
-            <GenreSection name= "Romance"/>
-            <GenreSection name= "Fiction"/>
+            <Form genres={genres.map(genre => genre.name)} onNewBook = {book => onNewBookAdded(book)}/>
+            <h2 className='shelfTitle'>Your Shelf</h2>
+            {genres.map (genre => <GenreSection key={genre.name} name={genre.name} firstColor={genre.firstColor} secondColor={genre.secondColor}/>)}            
+
         </div>
     );
 }

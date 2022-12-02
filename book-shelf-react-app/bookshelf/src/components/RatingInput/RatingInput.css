@@ -2,7 +2,7 @@
     margin: 24px 10px;
     width: 480px;
 }
-.rating label{
+.name{
     display: block;
     margin-bottom: 8px;
     font-size: 18px;
@@ -14,3 +14,16 @@
     background: #FFFFFF;
     margin: auto 10px;
 }
+
+input[name="webmaster"] {
+    accent-color: #6E40D6;
+    height: 16px;
+    width: 16px;
+}
+
+.rating label{
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+

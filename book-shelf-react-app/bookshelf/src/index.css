@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.shelfTitle{
+  color: #FB8257;
+  font-size: 36px;
+  text-align: center;
+}
