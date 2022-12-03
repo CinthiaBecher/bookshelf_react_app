@@ -1,0 +1,43 @@
+.bookCard{
+    width: 18%;
+    background-color: white;
+    padding: 20px 24px;
+    border-radius: 12px;
+    margin: 30px;
+}
+
+.bookCover img{
+    width: 60%;
+    border-radius: 6px;
+}
+
+.bookInfo h4{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 8px 0;
+}
+
+.bookInfo h5{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    margin: 0;
+}
+
+.ratingStar img {
+    width: 20px;
+    height: 20px;
+    margin: 0 6px;
+}
+
+.ratingStar p{
+    font-size: 16px;
+    margin: 0;
+}
+
+.ratingStar{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 14px;
+}

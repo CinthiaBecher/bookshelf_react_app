@@ -40,7 +40,13 @@ function App() {
             <Banner/> 
             <Form genres={genres.map(genre => genre.name)} onNewBook = {book => onNewBookAdded(book)}/>
             <h2 className='shelfTitle'>Your Shelf</h2>
-            {genres.map (genre => <GenreSection key={genre.name} name={genre.name} firstColor={genre.firstColor} secondColor={genre.secondColor}/>)}            
+            {genres.map (genre => <GenreSection 
+                key={genre.name} 
+                name={genre.name} 
+                firstColor={genre.firstColor} 
+                secondColor={genre.secondColor}
+                books = {books}
+            />)}            
 
         </div>
     );
