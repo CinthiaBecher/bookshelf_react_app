@@ -30,15 +30,15 @@ function App() {
 
     const [books, setBooks] = useState([])
 
-    const onNewBookAdded = (book) => {
+    const aoNovoLivroAdicionado = (book) => {
         console.log(book)
-        setBooks(...books, book)
+        setBooks([...books, book])
     }
 
     return (
         <div className = "App">
             <Banner/> 
-            <Form genres={genres.map(genre => genre.name)} onNewBook = {book => onNewBookAdded(book)}/>
+            <Form genres={genres.map(genre => genre.name)} aoLivroCadastrado ={book => aoNovoLivroAdicionado(book)}/>
             <h2 className='shelfTitle'>Your Shelf</h2>
             {genres.map (genre => <GenreSection 
                 key={genre.name} 

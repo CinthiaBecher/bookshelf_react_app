@@ -12,22 +12,51 @@ const Form = (props) => {
     const [cover, setCover] = useState('')
     const [genre, setGenre] = useState('')
 
-    const save = (evento) => {
+    const aoSalvar = (evento) => {
         evento.preventDefault()
-        props.onNewBook({title, author, cover, genre})
+        console.log('Form Submetido =>' ,title, author, cover, genre)
+        props.aoLivroCadastrado({
+            title,
+            author,
+            cover,
+            genre
+        })
     }
 
     return (
         <section className='form'>
-            <form onSubmit={save}>
+            <form onSubmit={aoSalvar}>
                 <h2>Add a new book to your shelf</h2>
                 <div className='SideBySide'>
-                    <InputText required = {true} label="Title" placeholder="Type book title" newValue = {title} onChanges = {newValue => setTitle(newValue)}/>
-                    <InputText required = {true} label="Author" placeholder="Type book author's name" newValue = {author} onChanges = {newValue => setAuthor(newValue)}/>                
+                    <InputText 
+                        required = {true} 
+                        label="Title" 
+                        placeholder="Type book title" 
+                        valor = {title} 
+                        aoAlterado = {valor => setTitle(valor)}
+                    />
+                    <InputText 
+                        required = {true} 
+                        label="Author" 
+                        placeholder="Type book author's name" 
+                        valor = {author} 
+                        aoAlterado = {valor => setAuthor(valor)}
+                    />                
                 </div>
                 <div className='SideBySide'>
-                    <InputText required = {true} label="Cover" placeholder="Cover image URL" newValue = {cover} onChanges = {newValue => setCover(newValue)}/>
-                    <Dropdown label = "Genre" items = {props.genres} newValue = {genre} onChanges = {newValue => setGenre(newValue)}></Dropdown>
+                    <InputText 
+                        required = {true} 
+                        label="Cover" 
+                        placeholder="Cover image URL" 
+                        newValue = {cover} 
+                        aoAlterado = {valor => setCover(valor)}
+                    />
+                    <Dropdown 
+                        label = "Genre" 
+                        items = {props.genres} 
+                        valor = {genre} 
+                        aoAlterado = {valor => setGenre(valor)}>
+                        </Dropdown>
                 </div>
                 <div className='SideBySide'>
                     <RatingInput></RatingInput>

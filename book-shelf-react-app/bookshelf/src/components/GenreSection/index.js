@@ -7,8 +7,7 @@ const GenreSection = (props) => {
     return (
         <section className='GenreSection' style={css}>
             <h3 style={{borderColor:  props.firstColor}}>{props.name}</h3>
-            {props.books.map ( book => <Book/> )}
-            
+            {props.books.map(book => <Book></Book>)} 
         </section>
     )
 }
