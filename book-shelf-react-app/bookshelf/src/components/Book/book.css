@@ -1,5 +1,5 @@
 .bookCard{
-    width: 18%;
+    width: 16%;
     background-color: white;
     padding: 20px 24px;
     border-radius: 12px;
@@ -7,7 +7,7 @@
 }
 
 .bookCover img{
-    width: 60%;
+    width: 68%;
     border-radius: 6px;
 }
 

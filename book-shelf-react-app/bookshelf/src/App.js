@@ -8,8 +8,8 @@ function App() {
     const genres = [
         {
             name: 'Fiction & Fantasy',
-            firstColor: '#E896B3',
-            secondColor: '#F6E0E1'
+            firstColor: '#521ad1',
+            secondColor: '#d4c5f5'
         },        
         {
             name: 'Romance',
@@ -45,7 +45,7 @@ function App() {
                 name={genre.name} 
                 firstColor={genre.firstColor} 
                 secondColor={genre.secondColor}
-                books = {books}
+                books = {books.filter(book => book.genre == genre.name)}
             />)}            
 
         </div>

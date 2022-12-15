@@ -1,15 +1,15 @@
 import './book.css'
 
-const Book = () => {
+const Book = (props) => {
     return (
         <div className='bookCard'>
             <div className='bookCover'>
-                <img src='https://m.media-amazon.com/images/I/91bPixy8YxL.jpg' />
+                <img src={props.cover}/>
             </div>
 
             <div className='bookInfo'>
-                <h4>Orgulho e Preconceito</h4>
-                <h5>Jane Austen</h5>
+                <h4>{props.title}</h4>
+                <h5>{props.author}</h5>
                 <div className='ratingStar'>
                     <p>5</p>
                     <img src='/images/star.png'/>

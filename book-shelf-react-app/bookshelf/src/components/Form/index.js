@@ -21,6 +21,10 @@ const Form = (props) => {
             cover,
             genre
         })
+        setTitle('')
+        setAuthor('')
+        setCover('')
+        setGenre('')
     }
 
     return (
@@ -48,7 +52,7 @@ const Form = (props) => {
                         required = {true} 
                         label="Cover" 
                         placeholder="Cover image URL" 
-                        newValue = {cover} 
+                        valor = {cover} 
                         aoAlterado = {valor => setCover(valor)}
                     />
                     <Dropdown 
